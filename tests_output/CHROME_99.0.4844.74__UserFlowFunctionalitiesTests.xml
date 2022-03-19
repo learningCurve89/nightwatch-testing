@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="6">
+
+  <testsuite name="UserFlowFunctionalitiesTests"
+    errors="0" failures="0" hostname="" id="" package="UserFlowFunctionalitiesTests" skipped="0"
+    tests="6" time="13.96" timestamp="">
+  
+    <testcase name="Logged out user display Jumbotron" classname="UserFlowFunctionalitiesTests" time="2.900" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Login assert sidebar is Menu" classname="UserFlowFunctionalitiesTests" time="4.168" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Assert Dashboard displays bookings" classname="UserFlowFunctionalitiesTests" time="1.238" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Assert Available Slots are displayed" classname="UserFlowFunctionalitiesTests" time="1.120" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="After Logout display correct navigation" classname="UserFlowFunctionalitiesTests" time="1.167" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Failed Login assert error message is invalid datails" classname="UserFlowFunctionalitiesTests" time="3.370" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

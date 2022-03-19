@@ -58,7 +58,22 @@ module.exports = {
         .assert.containsText('#root > div > main > div > div > div > div > p', "Some Text here")
         .assert.containsText('#navbarCollapse > ul > li:nth-child(1) > a', 'Login')
         .assert.containsText('#navbarCollapse > ul > li:nth-child(2) > a', 'Register')
-    }
+    },
+
+    'Failed Login assert error message is invalid datails': function(browser) {
+        browser
+        .waitForElementVisible('#loginBtn', 5000)
+        .pause(1000)
+        .click('#loginBtn')
+        .pause(1000)
+        .waitForElementVisible('#root > div > main > div > form', 5000)
+        .setValue('#root > div > main > div > form > input:nth-child(2)', 'error')
+        .setValue('#root > div > main > div > form > input:nth-child(3)', 'error')
+        .click('#root > div > main > div > form > button')
+        .pause(1000)
+        .waitForElementVisible('#root > div > main > div > form > p', 5000)
+        .assert.containsText('#root > div > main > div > form > p', "invalid datails")
+    },
 
 
 }
